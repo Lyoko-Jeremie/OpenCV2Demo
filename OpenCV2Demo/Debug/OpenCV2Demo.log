@@ -1,0 +1,22 @@
+﻿生成启动时间为 2015/9/28 18:12:36。
+     1>项目“D:\Code\VSC++\OpenCV2Demo\OpenCV2Demo\OpenCV2Demo.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Code\VSC++\OpenCV2Demo\Debug\OpenCV2Demo.exe" /INCREMENTAL /NOLOGO opencv_core248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Code\VSC++\OpenCV2Demo\Debug\OpenCV2Demo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Code\VSC++\OpenCV2Demo\Debug\OpenCV2Demo.lib" /MACHINE:X86 Debug\OpenCV2Demo.obj
+         Debug\stdafx.obj
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z)，该符号在函数 "public: __thiscall cv::Mat::~Mat(void)" (??1Mat@cv@@QAE@XZ) 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QAE@ABVMat@1@@Z)，该符号在函数 _main 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall cv::_OutputArray::_OutputArray(class cv::Mat &)" (??0_OutputArray@cv@@QAE@AAVMat@1@@Z)，该符号在函数 _main 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ)，该符号在函数 "public: void __thiscall cv::Mat::release(void)" (?release@Mat@cv@@QAEXXZ) 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "int __cdecl cv::_interlockedExchangeAdd(int *,int)" (?_interlockedExchangeAdd@cv@@YAHPAHH@Z)，该符号在函数 "public: void __thiscall cv::Mat::release(void)" (?release@Mat@cv@@QAEXXZ) 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::cvtColor(class cv::_InputArray const &,class cv::_OutputArray const &,int,int)" (?cvtColor@cv@@YAXABV_InputArray@1@ABV_OutputArray@1@HH@Z)，该符号在函数 _main 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@1@@Z)，该符号在函数 _main 中被引用
+     1>OpenCV2Demo.obj : error LNK2019: 无法解析的外部符号 "class cv::Mat __cdecl cv::imread(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?imread@cv@@YA?AVMat@1@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)，该符号在函数 _main 中被引用
+     1>D:\Code\OpenCV\Compiler-VS2015-X64\install\lib\opencv_core248d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+     1>D:\Code\OpenCV\Compiler-VS2015-X64\install\lib\opencv_highgui248d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+     1>D:\Code\OpenCV\Compiler-VS2015-X64\install\lib\opencv_imgproc248d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+     1>D:\Code\VSC++\OpenCV2Demo\Debug\OpenCV2Demo.exe : fatal error LNK1120: 8 个无法解析的外部命令
+     1>已完成生成项目“D:\Code\VSC++\OpenCV2Demo\OpenCV2Demo\OpenCV2Demo.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.75
