@@ -55,7 +55,7 @@ int main()
 	
 	// 声明一个Mat类型的变量iamgeINV 用来保存图像
 	cv::Mat iamgeINV;
-	// 按bit对矩阵求反（反转图像）
+	// 按bit对矩阵求反（反转图像）（反相）
 	// bitwise_not(输入图像,输出图像)
 	// 将image反转后保存到iamgeINV中
 	cv::bitwise_not(image, iamgeINV);
@@ -63,8 +63,9 @@ int main()
 	cv::waitKey();
 
 	cv::Mat imageGray;	// 创建一个准备用来保存灰度的image的Mat（黑白（灰度）和彩色图像使用同样的类型Mat）
-	// 检查image图像是不是三通道的
+	// 检查image图像是不是单通道的
 	// 黑白图象是单通道的  彩色图像一般是三通道（RGB（红绿蓝）） 有时四通道（ARGB（A代表alpha））
+	// Mat.channels() 会返回Mat的通道数
 	if ( 1 == image.channels() )
 	{
 		std::cout << "图像是黑白的。" << std::endl;
@@ -102,6 +103,14 @@ int main()
 	cv::imshow("翻转的二值化图像", imageThreshold);
 	cv::waitKey();
 
+
+	cv::Mat imageEqualizeHist;
+	cv::equalizeHist(imageGray, imageEqualizeHist);
+	cv::imshow("直方图均衡化的灰度图像", imageEqualizeHist);
+	cv::waitKey();
+
+
+
 	cv::Mat imageAdaptiveThreshold;
 	// 将imageGray自适应二值化后保存到imageAdaptiveThreshold
 	// adaptiveThreshold(输入图像,输出图像,处理后的最大值,均衡算法,处理函数,核大小（同时参与计算的像素区域大小）,均衡算法的参数)
@@ -112,6 +121,9 @@ int main()
 	imageAdaptiveThreshold = 255 - imageAdaptiveThreshold;
 	cv::imshow("翻转的自适应二值化图像", imageAdaptiveThreshold);
 	cv::waitKey();
+
+
+
 
 
 
